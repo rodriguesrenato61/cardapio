@@ -42,7 +42,7 @@ Para os tipos de prato com limite maior que 1 o input para setar a quantidade ap
 
 
 ## Pratos escolhidos
-Nessa modal podemos ver os pratos já esolhidos e podemos retirar o que não queremos mais ou trocar, além disso podemos ver o total e concluir o pedido.
+Nessa modal podemos ver os pratos já escolhidos e podemos retirar o que não queremos mais ou trocar, além disso podemos ver o total e concluir o pedido.
 
 ![concluir pedido](https://github.com/rodriguesrenato61/cardapio/blob/master/prints/print07.png)
 
