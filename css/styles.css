@@ -1,0 +1,115 @@
+div.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+h2.title-campo{
+	font-size: 25px;
+}
+
+div.container-campo{
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+h2.title-campo2{
+	margin-top: 20px;
+}
+
+div#nome-funcionario{
+	margin-top: 50px;
+}
+
+input{
+	height: 40px;
+}
+
+input#funcionario{
+	width: 50%;
+	font-size: 21px;
+}
+
+div#cardapio{
+	margin-top: 50px;
+}
+
+div#cardapio-head{
+	text-align: center;
+	background-color: #D8D8D8;
+}
+
+div#cardapio-head h2{
+	font-size: 33px;
+}
+
+div#cardapio-body{
+	height: 600px;
+	overflow: auto;
+}
+
+div#cardapio-body h2{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+div.row-prato{
+	cursor: pointer;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border: 1px solid #BDBDBD;
+}
+
+div.row-prato:hover{
+	background-color: #D8D8D8;
+}
+
+div.row-prato p{
+	font-size: 21px;
+}
+
+div#cardapio-bottom{
+	background-color: #D8D8D8;
+}
+
+button#btn-pedidos{
+	width: 25%;
+	float: right;
+	font-size: 28px;
+	margin-top: 25px;
+}
+
+div#container-obs{
+	margin-top: 150px;
+}
+
+p#p-obs{
+	font-size: 21px;
+}
+
+textarea#obs{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	font-size: 21px;
+}
+
+div#container-pagamento{
+	margin-top: 80px;
+}
+
+select#pagamento{
+	width: 40%;
+	height: 50px;
+	font-size: 21px;
+}
+
+button#btn-enviar{
+	font-size: 23px;
+	width: 150px;
+	height: 50px;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}

@@ -1,0 +1,58 @@
+div#modal-prato-info p{
+	font-size: 23px;
+}
+
+h5#modal-title{
+	font-size: 25px;
+}
+
+input#quantidade{
+	width: 40%;
+	font-size: 23px;
+}
+
+button#btn-remover{
+	display: none;
+}
+
+h5#modal-pedidos-title{
+	font-size: 31px;
+}
+
+div#modal-pedidos-body{
+	width: 95%;
+	margin: 0 auto;
+	height: 400px;
+	overflow: auto;
+}
+
+div#modal-pedidos-body h3{
+	margin-top: 30px;
+}
+
+div.row-pedido{
+	cursor: pointer;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border: 1px solid #D8D8D8;
+}
+
+div.row-pedido p{
+	font-size: 20px;
+}
+
+div#modal-bottom-pedidos{
+}
+
+div#total{
+	width: 75%;
+	font-size: 26px;
+	float: left;
+}
+
+button#btn-concluir{
+	float: right;
+	width: 20%;
+	font-size: 24px;
+}
