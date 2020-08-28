@@ -62,19 +62,19 @@
 					
 						case 'str':
 						
-							$sql->bindParam($item['campo'], $item['valor'], PDO::PARAM_STR);
+							$sql->bindParam($item['campo'], $item['valor'], \PDO::PARAM_STR);
 						
 						break;
 						
 						case 'int':
 						
-							$sql->bindParam($item['campo'], $item['valor'], PDO::PARAM_INT);
+							$sql->bindParam($item['campo'], $item['valor'], \PDO::PARAM_INT);
 						
 						break;
 						
 						default:
 						
-							$sql->bindParam($item['campo'], $item['valor'], PDO::PARAM_STR);
+							$sql->bindParam($item['campo'], $item['valor'], \PDO::PARAM_STR);
 						
 						break;
 						

@@ -74,7 +74,7 @@
 				
 				//verifica se o nome do funcionário está no banco de dados
 				$sql = $this->pdo->prepare("SELECT * FROM funcionarios WHERE nome = :nome");
-				$sql->bindParam(":nome", $funcionario, PDO::PARAM_STR);
+				$sql->bindParam(":nome", $funcionario, \PDO::PARAM_STR);
 				$sql->execute();
 				
 				if($sql->rowCount() > 0){
@@ -84,9 +84,9 @@
 					$fk_funcionario = $row['id'];
 					
 					$sql = $this->pdo->prepare("INSERT INTO funcionarios_pedidos(fk_funcionario, obs, pagamento, dt_registro)VALUES(:fk_funcionario, :obs, :pagamento, NOW())");
-					$sql->bindParam(":fk_funcionario", $fk_funcionario, PDO::PARAM_INT);
-					$sql->bindParam(":obs", $obs, PDO::PARAM_STR);
-					$sql->bindParam(":pagamento", $pagamento, PDO::PARAM_STR);
+					$sql->bindParam(":fk_funcionario", $fk_funcionario, \PDO::PARAM_INT);
+					$sql->bindParam(":obs", $obs, \PDO::PARAM_STR);
+					$sql->bindParam(":pagamento", $pagamento, \PDO::PARAM_STR);
 					$sql->execute();
 					
 					if($sql->rowCount() > 0){
@@ -106,11 +106,11 @@
 							$preco = $this->convertPreco($prato['preco']);
 						
 							$sql = $this->pdo->prepare("INSERT INTO pedidos(descricao_prato, tipo_prato, quantidade, valor, fk_funcionario_pedido)VALUES(:descricao, :tipo, :quantidade, :valor, :fk_pedido)");
-							$sql->bindParam(":descricao", $prato['descricao'], PDO::PARAM_STR);
-							$sql->bindParam(":tipo", $prato['tipo'], PDO::PARAM_STR);
-							$sql->bindParam(":quantidade", $prato['quantidade'], PDO::PARAM_INT);
-							$sql->bindParam(":valor", $preco, PDO::PARAM_STR);
-							$sql->bindParam(":fk_pedido", $fk_pedido, PDO::PARAM_INT);
+							$sql->bindParam(":descricao", $prato['descricao'], \PDO::PARAM_STR);
+							$sql->bindParam(":tipo", $prato['tipo'], \PDO::PARAM_STR);
+							$sql->bindParam(":quantidade", $prato['quantidade'], \PDO::PARAM_INT);
+							$sql->bindParam(":valor", $preco, \PDO::PARAM_STR);
+							$sql->bindParam(":fk_pedido", $fk_pedido, \PDO::PARAM_INT);
 							$sql->execute();
 							
 							if($sql->rowCount() == 0){

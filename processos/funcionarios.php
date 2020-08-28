@@ -1,5 +1,8 @@
 <?php
 
+	require_once("../vendor/autoload.php");
+	use App\Controller\FuncionarioController;
+
 	$response = array();
 
 	if(isset($_GET['opcao'])){
@@ -7,9 +10,6 @@
 		$opcao = filter_input(INPUT_GET, 'opcao', FILTER_SANITIZE_SPECIAL_CHARS);
 		
 		session_start();
-		
-		
-		use App\Controller\FuncionarioController;
 	
 		$funcionarioController = new FuncionarioController();
 		

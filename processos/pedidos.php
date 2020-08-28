@@ -1,12 +1,14 @@
 <?php
 
+	require_once("../vendor/autoload.php");
+
+	use App\Controller\PedidoController;
+
 	$response = array();
 
 	if(isset($_GET['opcao'])){
 		
 		session_start();
-		
-		use App\Controller\PedidoController;
 		
 		$pedidoController = new PedidoController();
 		

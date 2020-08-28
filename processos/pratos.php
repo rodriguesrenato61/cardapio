@@ -1,12 +1,13 @@
 <?php
 
+	require_once("../vendor/autoload.php");
+	use App\Controller\PratoController;
+
 	$response = array();
 	
 	if(isset($_GET['opcao'])){
 		
 		$opcao = filter_input(INPUT_GET, 'opcao', FILTER_SANITIZE_SPECIAL_CHARS);
-		
-		use App\Controller\PratoController;
 		
 		$pratoController = new PratoController();
 		
