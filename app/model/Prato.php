@@ -1,5 +1,9 @@
 <?php
 
+	namespace App\Model;
+	
+	use App\Model\Conexao;
+
 	class Prato extends Conexao{
 	
 		public function __construct(){

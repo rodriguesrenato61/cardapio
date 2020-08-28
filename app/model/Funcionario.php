@@ -1,5 +1,8 @@
 <?php
 
+	namespace App\Model;
+	
+	use App\Model\Conexao;
 
 	class Funcionario extends Conexao{
 		

@@ -1,6 +1,10 @@
 <?php
 	
 
+	namespace App\Controller;
+	
+	use App\Model\Pedido;
+
 	class PedidoController{
 		
 		private $pedido;

@@ -8,9 +8,8 @@
 		
 		session_start();
 		
-		include("../app/model/Conexao.php");
-		include("../app/model/Funcionario.php");
-		include("../app/controller/FuncionarioController.php");
+		
+		use App\Controller\FuncionarioController;
 	
 		$funcionarioController = new FuncionarioController();
 		

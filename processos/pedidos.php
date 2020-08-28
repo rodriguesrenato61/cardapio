@@ -6,9 +6,7 @@
 		
 		session_start();
 		
-		include("../app/model/Conexao.php");
-		include("../app/model/Pedido.php");
-		include("../app/controller/PedidoController.php");
+		use App\Controller\PedidoController;
 		
 		$pedidoController = new PedidoController();
 		

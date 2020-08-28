@@ -1,3 +1,9 @@
+<?php
+
+	require_once("vendor/autoload.php");
+	use App\Controller\PedidoController;
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -30,10 +36,6 @@
 				$resultado = $_SESSION['pedido']['resultado'];
 				
 				if($resultado['success']){
-					
-					include("app/model/Conexao.php");
-					include("app/model/Pedido.php");
-					include("app/controller/PedidoController.php");
 					
 					$pedidoController = new PedidoController();
 					

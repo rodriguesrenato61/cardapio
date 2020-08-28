@@ -6,9 +6,7 @@
 		
 		$opcao = filter_input(INPUT_GET, 'opcao', FILTER_SANITIZE_SPECIAL_CHARS);
 		
-		include("../app/model/Conexao.php");
-		include("../app/model/Prato.php");
-		include("../app/controller/PratoController.php");
+		use App\Controller\PratoController;
 		
 		$pratoController = new PratoController();
 		

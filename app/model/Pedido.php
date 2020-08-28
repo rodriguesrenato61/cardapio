@@ -1,5 +1,9 @@
 <?php
 
+	namespace App\Model;
+	
+	use App\Model\Conexao;
+
 	class Pedido extends Conexao{
 	
 		public function __construct(){
@@ -173,7 +177,7 @@
 			try{
 				
 				$sql = $this->pdo->prepare("SELECT * FROM vw_funcionarios_pedidos WHERE id = :id");
-				$sql->bindParam(":id", $id, PDO::PARAM_INT);
+				$sql->bindParam(":id", $id, \PDO::PARAM_INT);
 				$sql->execute();
 				
 				if($sql->rowCount() > 0){
@@ -189,7 +193,7 @@
 					$horaRegistro = $row['hora_registro'];
 					
 					$sql = $this->pdo->prepare("SELECT * FROM vw_pedidos WHERE fk_funcionario_pedido = :id");
-					$sql->bindParam(":id", $id, PDO::PARAM_INT);
+					$sql->bindParam(":id", $id, \PDO::PARAM_INT);
 					$sql->execute();
 					
 					if($sql->rowCount() > 0){

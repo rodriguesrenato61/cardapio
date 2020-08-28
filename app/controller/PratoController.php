@@ -1,5 +1,8 @@
 <?php
 
+	namespace App\Controller;
+	
+	use App\Model\Prato;
 
 	class PratoController{
 		

@@ -1,5 +1,8 @@
 <?php
 
+	namespace App\Controller;
+	
+	use App\Model\Funcionario;
 
 	class FuncionarioController{
 		
