@@ -5,7 +5,7 @@ Aplicação de cardápio feita com php, mysql, html, css e javascript. Necessita
 1. Crie o banco de dados copiando seu código fonte no aquivo banco.sql e definindo o padrão de caracteres para utf8_general_ci.
 2. Modifique as configurações de conexão com o banco de acordo com o que você criou no arquivo app/model/Conexao.php.
 3. Modifique a url raiz da aplicação de acordo com a sua máquina no arquivo js/modulos/rota.js.
-4. Use o composer para instalar o auloload para utilizar os namesmaces.
+4. Use o composer para instalar o auloload para utilizar os namespaces.
 
 
 ## Funcionário
